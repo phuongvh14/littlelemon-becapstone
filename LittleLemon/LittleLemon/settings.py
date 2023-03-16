@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'djoser',
     'Restaurant',
+    'API',
 ]
 
 MIDDLEWARE = [
@@ -120,16 +121,16 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'restaurant/static/'
+STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    "restaurant/static",
+    "restaurant/static/restaurant",
 ]
 
 # Default primary key field type
